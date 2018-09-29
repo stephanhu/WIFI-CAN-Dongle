@@ -1,0 +1,3 @@
+[submodule "kicad-libs-workshop"]
+	path = kicad-libs-workshop
+	url = git@github.com:Bytewerk/kicad-libs-workshop.git

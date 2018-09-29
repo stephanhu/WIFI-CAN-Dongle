@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name bytewerk-discrete)(type Legacy)(uri /home/stephan/Dokumente/KiCad_Workshop/libs_workshop/symbols/bytewerk-discrete.lib)(options "")(descr ""))
+)

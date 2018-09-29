@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name bytewerk_capacitors)(type KiCad)(uri ${KIPRJMOD}/libs_workshop/footprints/bytewerk_capacitors.pretty)(options "")(descr "Capacitors that are used at the infamous bytewerk"))
+  (lib (name bytewerk_resistors)(type KiCad)(uri ${KIPRJMOD}/libs_workshop/footprints/bytewerk_resistors.pretty)(options "")(descr "Resistors that are used at the infamous bytewerk"))
+)
