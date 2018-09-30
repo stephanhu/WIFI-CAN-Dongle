@@ -1,0 +1,333 @@
+EESchema Schematic File Version 4
+LIBS:esp32_can_donlge-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "WIFI-CAN-Dongle"
+Date "2018-09-30"
+Rev "v1.0"
+Comp ""
+Comment1 ""
+Comment2 "Stephan Hültl"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_CAN_LIN:SN65HVD230 U?
+U 1 1 5BB4337B
+P 5500 3600
+F 0 "U?" H 5300 3850 50  0000 R CNN
+F 1 "SN65HVD230DR" H 6100 3250 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 5400 4000 50  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5BB4348D
+P 5500 4150
+F 0 "#PWR0117" H 5500 3900 50  0001 C CNN
+F 1 "GND" H 5500 4000 50  0000 C CNN
+F 2 "" H 5500 4150 50  0001 C CNN
+F 3 "" H 5500 4150 50  0001 C CNN
+	1    5500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4150 5500 4000
+Wire Wire Line
+	5100 3500 3200 3500
+Wire Wire Line
+	5100 3600 3200 3600
+Text HLabel 3200 3500 0    50   Input ~ 0
+CAN_TX
+Text HLabel 3200 3600 0    50   Output ~ 0
+CAN_RX
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB4358F
+P 4650 3150
+F 0 "R?" V 4730 3150 50  0000 C CNN
+F 1 "1k" V 4650 3150 50  0000 C CNN
+F 2 "" V 4580 3150 50  0001 C CNN
+F 3 "~" H 4650 3150 50  0001 C CNN
+	1    4650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB43666
+P 4250 3150
+F 0 "R?" V 4330 3150 50  0000 C CNN
+F 1 "10k" V 4250 3150 50  0000 C CNN
+F 2 "" V 4180 3150 50  0001 C CNN
+F 3 "~" H 4250 3150 50  0001 C CNN
+	1    4250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB43688
+P 4250 4050
+F 0 "R?" V 4330 4050 50  0000 C CNN
+F 1 "10k" V 4250 4050 50  0000 C CNN
+F 2 "" V 4180 4050 50  0001 C CNN
+F 3 "~" H 4250 4050 50  0001 C CNN
+	1    4250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5BB436C0
+P 4250 4300
+F 0 "#PWR0118" H 4250 4050 50  0001 C CNN
+F 1 "GND" H 4250 4150 50  0000 C CNN
+F 2 "" H 4250 4300 50  0001 C CNN
+F 3 "" H 4250 4300 50  0001 C CNN
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4300 4250 4200
+Wire Wire Line
+	5100 3700 4250 3700
+Wire Wire Line
+	4250 3300 4250 3700
+Wire Wire Line
+	4250 3700 4250 3900
+Wire Wire Line
+	4650 3800 5100 3800
+Connection ~ 4250 3700
+Wire Wire Line
+	4650 3300 4650 3800
+$Comp
+L power:+3V3 #PWR0119
+U 1 1 5BB43A1C
+P 4250 2850
+F 0 "#PWR0119" H 4250 2700 50  0001 C CNN
+F 1 "+3V3" H 4250 2990 50  0000 C CNN
+F 2 "" H 4250 2850 50  0001 C CNN
+F 3 "" H 4250 2850 50  0001 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0120
+U 1 1 5BB43A42
+P 4650 2850
+F 0 "#PWR0120" H 4650 2700 50  0001 C CNN
+F 1 "+3V3" H 4650 2990 50  0000 C CNN
+F 2 "" H 4650 2850 50  0001 C CNN
+F 3 "" H 4650 2850 50  0001 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2850 4650 3000
+Wire Wire Line
+	4250 2850 4250 3000
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 5BB43BA3
+P 5500 2850
+F 0 "#PWR0121" H 5500 2700 50  0001 C CNN
+F 1 "+3V3" H 5500 2990 50  0000 C CNN
+F 2 "" H 5500 2850 50  0001 C CNN
+F 3 "" H 5500 2850 50  0001 C CNN
+	1    5500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2850 5500 3300
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB43CA3
+P 3900 3800
+F 0 "R?" V 3980 3800 50  0000 C CNN
+F 1 "0R" V 3900 3800 50  0000 C CNN
+F 2 "" V 3830 3800 50  0001 C CNN
+F 3 "~" H 3900 3800 50  0001 C CNN
+	1    3900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 3800 4650 3800
+Connection ~ 4650 3800
+Wire Wire Line
+	3750 3800 3200 3800
+Text HLabel 3200 3800 0    50   Input ~ 0
+CAN_EN
+Text HLabel 9250 3600 2    50   BiDi ~ 0
+CAN_P
+Text HLabel 9250 3700 2    50   BiDi ~ 0
+CAN_N
+$Comp
+L Relay_SolidState:TLP175A U?
+U 1 1 5BB44658
+P 7750 3750
+F 0 "U?" H 7550 3945 50  0000 L CNN
+F 1 "TLP175A" H 7550 3550 50  0000 L CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 7750 3450 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13665&prodName=TLP175A" H 7700 3750 50  0001 L CNN
+	1    7750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB44862
+P 8200 3350
+F 0 "R?" V 8280 3350 50  0000 C CNN
+F 1 "100R" V 8200 3350 50  0000 C CNN
+F 2 "" V 8130 3350 50  0001 C CNN
+F 3 "~" H 8200 3350 50  0001 C CNN
+	1    8200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3600 6200 3600
+Wire Wire Line
+	6200 3600 6200 3050
+Wire Wire Line
+	6200 3050 8200 3050
+Wire Wire Line
+	8650 3050 8650 3600
+Wire Wire Line
+	8650 3600 9250 3600
+Wire Wire Line
+	9250 3700 8650 3700
+Wire Wire Line
+	8650 3700 8650 4250
+Wire Wire Line
+	8650 4250 8200 4250
+Wire Wire Line
+	6200 4250 6200 3700
+Wire Wire Line
+	6200 3700 5900 3700
+Wire Wire Line
+	8050 3850 8200 3850
+Wire Wire Line
+	8200 3850 8200 4250
+Connection ~ 8200 4250
+Wire Wire Line
+	8200 4250 6200 4250
+Wire Wire Line
+	8050 3650 8200 3650
+Wire Wire Line
+	8200 3650 8200 3500
+Wire Wire Line
+	8200 3200 8200 3050
+Connection ~ 8200 3050
+Wire Wire Line
+	8200 3050 8650 3050
+$Comp
+L power:GND #PWR0122
+U 1 1 5BB45986
+P 7300 3950
+F 0 "#PWR0122" H 7300 3700 50  0001 C CNN
+F 1 "GND" H 7300 3800 50  0000 C CNN
+F 2 "" H 7300 3950 50  0001 C CNN
+F 3 "" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3950 7300 3850
+Wire Wire Line
+	7300 3850 7450 3850
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB45D77
+P 7200 3650
+F 0 "R?" V 7280 3650 50  0000 C CNN
+F 1 "470R" V 7200 3650 50  0000 C CNN
+F 2 "" V 7130 3650 50  0001 C CNN
+F 3 "~" H 7200 3650 50  0001 C CNN
+	1    7200 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 3650 7450 3650
+Wire Wire Line
+	7050 3650 6850 3650
+Text HLabel 6850 3650 0    50   Input ~ 0
+CAN_TERM_EN
+$Comp
+L bytewerk-discrete:C C?
+U 1 1 5BB482BC
+P 6650 2250
+AR Path="/5BAFEFFB/5BB482BC" Ref="C?"  Part="1" 
+AR Path="/5BAFEFFE/5BB482BC" Ref="C?"  Part="1" 
+F 0 "C?" H 6675 2350 50  0000 L CNN
+F 1 "10u/25V" H 6675 2150 50  0000 L CNN
+F 2 "" H 6688 2100 50  0001 C CNN
+F 3 "~" H 6650 2250 50  0001 C CNN
+	1    6650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:C C?
+U 1 1 5BB482C3
+P 5950 2250
+AR Path="/5BAFEFFB/5BB482C3" Ref="C?"  Part="1" 
+AR Path="/5BAFEFFE/5BB482C3" Ref="C?"  Part="1" 
+F 0 "C?" H 5975 2350 50  0000 L CNN
+F 1 "100n/25V" H 5975 2150 50  0000 L CNN
+F 2 "" H 5988 2100 50  0001 C CNN
+F 3 "~" H 5950 2250 50  0001 C CNN
+	1    5950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB482CA
+P 6650 2500
+AR Path="/5BAFEFFB/5BB482CA" Ref="#PWR?"  Part="1" 
+AR Path="/5BAFEFFE/5BB482CA" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 6650 2250 50  0001 C CNN
+F 1 "GND" H 6650 2350 50  0000 C CNN
+F 2 "" H 6650 2500 50  0001 C CNN
+F 3 "" H 6650 2500 50  0001 C CNN
+	1    6650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB482D0
+P 5950 2500
+AR Path="/5BAFEFFB/5BB482D0" Ref="#PWR?"  Part="1" 
+AR Path="/5BAFEFFE/5BB482D0" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 5950 2250 50  0001 C CNN
+F 1 "GND" H 5950 2350 50  0000 C CNN
+F 2 "" H 5950 2500 50  0001 C CNN
+F 3 "" H 5950 2500 50  0001 C CNN
+	1    5950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2500 5950 2400
+Wire Wire Line
+	6650 2400 6650 2500
+$Comp
+L power:+3V3 #PWR0125
+U 1 1 5BB487C1
+P 5950 1800
+F 0 "#PWR0125" H 5950 1650 50  0001 C CNN
+F 1 "+3V3" H 5950 1940 50  0000 C CNN
+F 2 "" H 5950 1800 50  0001 C CNN
+F 3 "" H 5950 1800 50  0001 C CNN
+	1    5950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1950 6650 1950
+Wire Wire Line
+	6650 1950 6650 2100
+Wire Wire Line
+	5950 1800 5950 1950
+Connection ~ 5950 1950
+Wire Wire Line
+	5950 1950 5950 2100
+$EndSCHEMATC

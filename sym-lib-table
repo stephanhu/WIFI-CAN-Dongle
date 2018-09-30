@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name bytewerk-discrete)(type Legacy)(uri /home/stephan/Dokumente/KiCad_Workshop/libs_workshop/symbols/bytewerk-discrete.lib)(options "")(descr ""))
+  (lib (name bytewerk-discrete)(type Legacy)(uri ${KIPRJMOD}/kicad-libs-workshop/symbols/bytewerk-discrete.lib)(options "")(descr ""))
+  (lib (name bytewerk-esp32)(type Legacy)(uri ${KIPRJMOD}/kicad-libs-workshop/symbols/bytewerk-esp32.lib)(options "")(descr ""))
+  (lib (name bytewerk-vreg)(type Legacy)(uri ${KIPRJMOD}/kicad-libs-workshop/symbols/bytewerk-vreg.lib)(options "")(descr ""))
 )

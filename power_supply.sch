@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+LIBS:esp32_can_donlge-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "WIFI-CAN-Dongle"
+Date "2018-09-30"
+Rev "v1.0"
+Comp ""
+Comment1 ""
+Comment2 "Stephan Hültl"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR0126
+U 1 1 5BB66683
+P 4350 1600
+F 0 "#PWR0126" H 4350 1450 50  0001 C CNN
+F 1 "+12V" H 4350 1740 50  0000 C CNN
+F 2 "" H 4350 1600 50  0001 C CNN
+F 3 "" H 4350 1600 50  0001 C CNN
+	1    4350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1700 4350 1700
+Wire Wire Line
+	4350 1600 4350 1700
+$Comp
+L Connector:DB9_Male J?
+U 1 1 5BB668D7
+P 1300 1400
+F 0 "J?" H 1300 1950 50  0000 C CNN
+F 1 "DB9_Male" H 1300 825 50  0000 C CNN
+F 2 "" H 1300 1400 50  0001 C CNN
+F 3 " ~" H 1300 1400 50  0001 C CNN
+	1    1300 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5BB66A66
+P 1950 2350
+F 0 "#PWR0127" H 1950 2100 50  0001 C CNN
+F 1 "GND" H 1950 2200 50  0000 C CNN
+F 2 "" H 1950 2350 50  0001 C CNN
+F 3 "" H 1950 2350 50  0001 C CNN
+	1    1950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1400 1950 1400
+Wire Wire Line
+	1950 1400 1950 2350
+Wire Wire Line
+	1600 1700 3500 1700
+Wire Wire Line
+	1600 1200 2300 1200
+Wire Wire Line
+	1600 1300 2500 1300
+Text HLabel 2750 1300 2    50   BiDi ~ 0
+CAN_P
+Text HLabel 2750 1200 2    50   BiDi ~ 0
+CAN_N
+$Comp
+L Power_Protection:NUP2105L D?
+U 1 1 5BB66FE6
+P 2400 2000
+F 0 "D?" H 2625 2100 50  0000 L CNN
+F 1 "NUP2105L" H 2625 2025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2625 1950 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 2525 2125 50  0001 C CNN
+	1    2400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5BB67083
+P 2400 2350
+F 0 "#PWR0128" H 2400 2100 50  0001 C CNN
+F 1 "GND" H 2400 2200 50  0000 C CNN
+F 2 "" H 2400 2350 50  0001 C CNN
+F 3 "" H 2400 2350 50  0001 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1800 2300 1200
+Connection ~ 2300 1200
+Wire Wire Line
+	2300 1200 2750 1200
+Connection ~ 2500 1300
+Wire Wire Line
+	2500 1300 2750 1300
+Wire Wire Line
+	2400 2200 2400 2350
+Wire Wire Line
+	2500 1300 2500 1800
+NoConn ~ 1600 1000
+NoConn ~ 1600 1100
+NoConn ~ 1600 1500
+NoConn ~ 1600 1600
+NoConn ~ 1600 1800
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB6785D
+P 3500 2000
+F 0 "R?" V 3580 2000 50  0000 C CNN
+F 1 "82k" V 3500 2000 50  0000 C CNN
+F 2 "" V 3430 2000 50  0001 C CNN
+F 3 "~" H 3500 2000 50  0001 C CNN
+	1    3500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:R R?
+U 1 1 5BB67882
+P 3500 2600
+F 0 "R?" V 3580 2600 50  0000 C CNN
+F 1 "33k" V 3500 2600 50  0000 C CNN
+F 2 "" V 3430 2600 50  0001 C CNN
+F 3 "~" H 3500 2600 50  0001 C CNN
+	1    3500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5BB678B4
+P 3500 2900
+F 0 "#PWR0129" H 3500 2650 50  0001 C CNN
+F 1 "GND" H 3500 2750 50  0000 C CNN
+F 2 "" H 3500 2900 50  0001 C CNN
+F 3 "" H 3500 2900 50  0001 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2750 3500 2900
+Wire Wire Line
+	3500 2450 3500 2300
+Connection ~ 3500 1700
+Wire Wire Line
+	3500 1700 3750 1700
+Wire Wire Line
+	3500 1700 3500 1850
+Wire Wire Line
+	3500 2300 3750 2300
+Connection ~ 3500 2300
+Wire Wire Line
+	3500 2300 3500 2150
+Text GLabel 3750 2300 2    50   Output ~ 0
+BAT_ADC_IN
+$Comp
+L bytewerk-vreg:NCP718BSN330T1G U?
+U 1 1 5BB0322F
+P 5450 4050
+F 0 "U?" H 5450 4400 50  0000 C TNN
+F 1 "NCP718BSN330T1G" H 5450 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5450 3650 50  0001 C CIN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 5450 3550 50  0001 C CNN
+	1    5450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:C C?
+U 1 1 5BB05C6D
+P 4000 4250
+AR Path="/5BAFEFFB/5BB05C6D" Ref="C?"  Part="1" 
+AR Path="/5BAFF001/5BB05C6D" Ref="C?"  Part="1" 
+F 0 "C?" H 4025 4350 50  0000 L CNN
+F 1 "10u/25V" H 4025 4150 50  0000 L CNN
+F 2 "" H 4038 4100 50  0001 C CNN
+F 3 "~" H 4000 4250 50  0001 C CNN
+	1    4000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bytewerk-discrete:C C?
+U 1 1 5BB05C74
+P 4550 4250
+AR Path="/5BAFEFFB/5BB05C74" Ref="C?"  Part="1" 
+AR Path="/5BAFF001/5BB05C74" Ref="C?"  Part="1" 
+F 0 "C?" H 4575 4350 50  0000 L CNN
+F 1 "100n/25V" H 4575 4150 50  0000 L CNN
+F 2 "" H 4588 4100 50  0001 C CNN
+F 3 "~" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB05C7B
+P 4000 4500
+AR Path="/5BAFEFFB/5BB05C7B" Ref="#PWR?"  Part="1" 
+AR Path="/5BAFF001/5BB05C7B" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 4000 4250 50  0001 C CNN
+F 1 "GND" H 4000 4350 50  0000 C CNN
+F 2 "" H 4000 4500 50  0001 C CNN
+F 3 "" H 4000 4500 50  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB05C81
+P 4550 4500
+AR Path="/5BAFEFFB/5BB05C81" Ref="#PWR?"  Part="1" 
+AR Path="/5BAFF001/5BB05C81" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 4550 4250 50  0001 C CNN
+F 1 "GND" H 4550 4350 50  0000 C CNN
+F 2 "" H 4550 4500 50  0001 C CNN
+F 3 "" H 4550 4500 50  0001 C CNN
+	1    4550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4500 4550 4400
+Wire Wire Line
+	4000 4400 4000 4500
+Wire Wire Line
+	4000 3950 4000 4100
+Wire Wire Line
+	4550 3950 4550 4100
+Wire Wire Line
+	5050 3950 4850 3950
+Wire Wire Line
+	4550 3950 4000 3950
+Connection ~ 4550 3950
+Wire Wire Line
+	4000 3950 4000 3800
+Connection ~ 4000 3950
+$Comp
+L power:+12V #PWR0132
+U 1 1 5BB06B4C
+P 4000 3800
+F 0 "#PWR0132" H 4000 3650 50  0001 C CNN
+F 1 "+12V" H 4000 3940 50  0000 C CNN
+F 2 "" H 4000 3800 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB06BD5
+P 5450 4500
+AR Path="/5BAFEFFB/5BB06BD5" Ref="#PWR?"  Part="1" 
+AR Path="/5BAFF001/5BB06BD5" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 5450 4250 50  0001 C CNN
+F 1 "GND" H 5450 4350 50  0000 C CNN
+F 2 "" H 5450 4500 50  0001 C CNN
+F 3 "" H 5450 4500 50  0001 C CNN
+	1    5450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4500 5450 4350
+$Comp
+L bytewerk-discrete:C C?
+U 1 1 5BB06EB0
+P 6300 4250
+AR Path="/5BAFEFFB/5BB06EB0" Ref="C?"  Part="1" 
+AR Path="/5BAFF001/5BB06EB0" Ref="C?"  Part="1" 
+F 0 "C?" H 6325 4350 50  0000 L CNN
+F 1 "10u/25V" H 6325 4150 50  0000 L CNN
+F 2 "" H 6338 4100 50  0001 C CNN
+F 3 "~" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB06EB7
+P 6300 4500
+AR Path="/5BAFEFFB/5BB06EB7" Ref="#PWR?"  Part="1" 
+AR Path="/5BAFF001/5BB06EB7" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 6300 4250 50  0001 C CNN
+F 1 "GND" H 6300 4350 50  0000 C CNN
+F 2 "" H 6300 4500 50  0001 C CNN
+F 3 "" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4400 6300 4500
+Wire Wire Line
+	5850 3950 6300 3950
+Wire Wire Line
+	6300 3950 6300 4100
+$Comp
+L power:+3V3 #PWR0135
+U 1 1 5BB07513
+P 6300 3750
+F 0 "#PWR0135" H 6300 3600 50  0001 C CNN
+F 1 "+3V3" H 6300 3890 50  0000 C CNN
+F 2 "" H 6300 3750 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3750 6300 3950
+Connection ~ 6300 3950
+Wire Wire Line
+	5050 4150 4850 4150
+Wire Wire Line
+	4850 4150 4850 3950
+Connection ~ 4850 3950
+Wire Wire Line
+	4850 3950 4550 3950
+$Comp
+L Diode:1N5822 D?
+U 1 1 5BC14681
+P 3900 1700
+F 0 "D?" H 3900 1800 50  0000 C CNN
+F 1 "1N5822" H 3900 1600 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3900 1525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
