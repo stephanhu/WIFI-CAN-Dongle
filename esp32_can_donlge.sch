@@ -47,6 +47,7 @@ F0 "power_supply" 50
 F1 "power_supply.sch" 50
 F2 "CAN_P" B R 6450 1750 50 
 F3 "CAN_N" B R 6450 1850 50 
+F4 "Power_Good" O R 6450 1950 50 
 $EndSheet
 $Sheet
 S 2100 3100 1650 850 
@@ -86,4 +87,10 @@ Wire Wire Line
 	3750 3700 4800 3700
 Wire Wire Line
 	3750 3800 4800 3800
+Wire Wire Line
+	6450 1950 6800 1950
+Wire Wire Line
+	6800 1950 6800 3300
+Wire Wire Line
+	6800 3300 6450 3300
 $EndSCHEMATC

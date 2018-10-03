@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_CAN_LIN:SN65HVD230 U?
+L Interface_CAN_LIN:SN65HVD230 U2
 U 1 1 5BB4337B
 P 5500 3600
-F 0 "U?" H 5300 3850 50  0000 R CNN
+F 0 "U2" H 5300 3850 50  0000 R CNN
 F 1 "SN65HVD230DR" H 6100 3250 50  0000 R CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 3100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 5400 4000 50  0001 C CNN
@@ -47,34 +47,34 @@ CAN_TX
 Text HLabel 3200 3600 0    50   Output ~ 0
 CAN_RX
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R21
 U 1 1 5BB4358F
 P 4650 3150
-F 0 "R?" V 4730 3150 50  0000 C CNN
+F 0 "R21" V 4730 3150 50  0000 C CNN
 F 1 "1k" V 4650 3150 50  0000 C CNN
-F 2 "" V 4580 3150 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 4580 3150 50  0001 C CNN
 F 3 "~" H 4650 3150 50  0001 C CNN
 	1    4650 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R19
 U 1 1 5BB43666
 P 4250 3150
-F 0 "R?" V 4330 3150 50  0000 C CNN
+F 0 "R19" V 4330 3150 50  0000 C CNN
 F 1 "10k" V 4250 3150 50  0000 C CNN
-F 2 "" V 4180 3150 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 4180 3150 50  0001 C CNN
 F 3 "~" H 4250 3150 50  0001 C CNN
 	1    4250 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R20
 U 1 1 5BB43688
 P 4250 4050
-F 0 "R?" V 4330 4050 50  0000 C CNN
+F 0 "R20" V 4330 4050 50  0000 C CNN
 F 1 "10k" V 4250 4050 50  0000 C CNN
-F 2 "" V 4180 4050 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 4180 4050 50  0001 C CNN
 F 3 "~" H 4250 4050 50  0001 C CNN
 	1    4250 4050
 	1    0    0    -1  
@@ -143,12 +143,12 @@ $EndComp
 Wire Wire Line
 	5500 2850 5500 3300
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R18
 U 1 1 5BB43CA3
 P 3900 3800
-F 0 "R?" V 3980 3800 50  0000 C CNN
+F 0 "R18" V 3980 3800 50  0000 C CNN
 F 1 "0R" V 3900 3800 50  0000 C CNN
-F 2 "" V 3830 3800 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 3830 3800 50  0001 C CNN
 F 3 "~" H 3900 3800 50  0001 C CNN
 	1    3900 3800
 	0    1    1    0   
@@ -165,10 +165,10 @@ CAN_P
 Text HLabel 9250 3700 2    50   BiDi ~ 0
 CAN_N
 $Comp
-L Relay_SolidState:TLP175A U?
+L Relay_SolidState:TLP175A U3
 U 1 1 5BB44658
 P 7750 3750
-F 0 "U?" H 7550 3945 50  0000 L CNN
+F 0 "U3" H 7550 3945 50  0000 L CNN
 F 1 "TLP175A" H 7550 3550 50  0000 L CNN
 F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 7750 3450 50  0001 C CIN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13665&prodName=TLP175A" H 7700 3750 50  0001 L CNN
@@ -176,12 +176,12 @@ F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13665&prodName=TLP1
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R23
 U 1 1 5BB44862
 P 8200 3350
-F 0 "R?" V 8280 3350 50  0000 C CNN
+F 0 "R23" V 8280 3350 50  0000 C CNN
 F 1 "100R" V 8200 3350 50  0000 C CNN
-F 2 "" V 8130 3350 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 8130 3350 50  0001 C CNN
 F 3 "~" H 8200 3350 50  0001 C CNN
 	1    8200 3350
 	1    0    0    -1  
@@ -238,12 +238,12 @@ Wire Wire Line
 Wire Wire Line
 	7300 3850 7450 3850
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R22
 U 1 1 5BB45D77
 P 7200 3650
-F 0 "R?" V 7280 3650 50  0000 C CNN
+F 0 "R22" V 7280 3650 50  0000 C CNN
 F 1 "470R" V 7200 3650 50  0000 C CNN
-F 2 "" V 7130 3650 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7130 3650 50  0001 C CNN
 F 3 "~" H 7200 3650 50  0001 C CNN
 	1    7200 3650
 	0    1    1    0   
@@ -259,10 +259,10 @@ L bytewerk-discrete:C C?
 U 1 1 5BB482BC
 P 6650 2250
 AR Path="/5BAFEFFB/5BB482BC" Ref="C?"  Part="1" 
-AR Path="/5BAFEFFE/5BB482BC" Ref="C?"  Part="1" 
-F 0 "C?" H 6675 2350 50  0000 L CNN
+AR Path="/5BAFEFFE/5BB482BC" Ref="C9"  Part="1" 
+F 0 "C9" H 6675 2350 50  0000 L CNN
 F 1 "10u/25V" H 6675 2150 50  0000 L CNN
-F 2 "" H 6688 2100 50  0001 C CNN
+F 2 "bytewerk_capacitors:C_0805_2012Metric" H 6688 2100 50  0001 C CNN
 F 3 "~" H 6650 2250 50  0001 C CNN
 	1    6650 2250
 	1    0    0    -1  
@@ -272,10 +272,10 @@ L bytewerk-discrete:C C?
 U 1 1 5BB482C3
 P 5950 2250
 AR Path="/5BAFEFFB/5BB482C3" Ref="C?"  Part="1" 
-AR Path="/5BAFEFFE/5BB482C3" Ref="C?"  Part="1" 
-F 0 "C?" H 5975 2350 50  0000 L CNN
+AR Path="/5BAFEFFE/5BB482C3" Ref="C8"  Part="1" 
+F 0 "C8" H 5975 2350 50  0000 L CNN
 F 1 "100n/25V" H 5975 2150 50  0000 L CNN
-F 2 "" H 5988 2100 50  0001 C CNN
+F 2 "bytewerk_capacitors:C_0603_1608Metric" H 5988 2100 50  0001 C CNN
 F 3 "~" H 5950 2250 50  0001 C CNN
 	1    5950 2250
 	1    0    0    -1  

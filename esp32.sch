@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bytewerk-esp32:ESP32-WROOM-32 U?
+L bytewerk-esp32:ESP32-WROOM-32 U1
 U 1 1 5BAFF069
 P 5250 2950
-F 0 "U?" H 2650 4150 50  0000 C CNN
+F 0 "U1" H 2650 4150 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 7950 1700 50  0000 C CNN
 F 2 "bytewerk-esp32:ESP32-WROOM-32" H 8300 1600 50  0001 R CNN
 F 3 "" H 2750 2950 50  0001 C CNN
@@ -61,23 +61,23 @@ Wire Wire Line
 Wire Wire Line
 	5400 4500 5400 4350
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R16
 U 1 1 5BAFF375
 P 8950 2450
-F 0 "R?" V 9030 2450 50  0000 C CNN
+F 0 "R16" V 9030 2450 50  0000 C CNN
 F 1 "220R" V 8950 2450 50  0000 C CNN
-F 2 "" V 8880 2450 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 8880 2450 50  0001 C CNN
 F 3 "~" H 8950 2450 50  0001 C CNN
 	1    8950 2450
 	0    -1   1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R17
 U 1 1 5BAFF3BE
 P 9350 2550
-F 0 "R?" V 9430 2550 50  0000 C CNN
+F 0 "R17" V 9430 2550 50  0000 C CNN
 F 1 "220R" V 9350 2550 50  0000 C CNN
-F 2 "" V 9280 2550 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 9280 2550 50  0001 C CNN
 F 3 "~" H 9350 2550 50  0001 C CNN
 	1    9350 2550
 	0    -1   1    0   
@@ -95,23 +95,23 @@ CAN_RX
 Text HLabel 9850 2550 2    50   Output ~ 0
 CAN_TX
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5BAFFBE3
 P 1000 5200
-F 0 "D?" H 1000 5300 50  0000 C CNN
+F 0 "D1" H 1000 5300 50  0000 C CNN
 F 1 "LED" H 1000 5100 50  0000 C CNN
-F 2 "" H 1000 5200 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1000 5200 50  0001 C CNN
 F 3 "~" H 1000 5200 50  0001 C CNN
 	1    1000 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 5BAFFD0C
 P 1350 5200
-F 0 "D?" H 1350 5300 50  0000 C CNN
+F 0 "D2" H 1350 5300 50  0000 C CNN
 F 1 "LED" H 1350 5100 50  0000 C CNN
-F 2 "" H 1350 5200 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1350 5200 50  0001 C CNN
 F 3 "~" H 1350 5200 50  0001 C CNN
 	1    1350 5200
 	0    -1   -1   0   
@@ -143,23 +143,23 @@ $EndComp
 Wire Wire Line
 	1350 5500 1350 5350
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R1
 U 1 1 5BAFFFB6
 P 1000 4750
-F 0 "R?" V 1080 4750 50  0000 C CNN
+F 0 "R1" V 1080 4750 50  0000 C CNN
 F 1 "1k" V 1000 4750 50  0000 C CNN
-F 2 "" V 930 4750 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 930 4750 50  0001 C CNN
 F 3 "~" H 1000 4750 50  0001 C CNN
 	1    1000 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R2
 U 1 1 5BAFFFF9
 P 1350 4750
-F 0 "R?" V 1430 4750 50  0000 C CNN
+F 0 "R2" V 1430 4750 50  0000 C CNN
 F 1 "1k" V 1350 4750 50  0000 C CNN
-F 2 "" V 1280 4750 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 1280 4750 50  0001 C CNN
 F 3 "~" H 1350 4750 50  0001 C CNN
 	1    1350 4750
 	1    0    0    -1  
@@ -197,23 +197,23 @@ UART_USB_TX
 Text HLabel 1550 2550 0    50   Input ~ 0
 UART_USB_RX
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R3
 U 1 1 5BB014A3
 P 1550 1100
-F 0 "R?" V 1630 1100 50  0000 C CNN
+F 0 "R3" V 1630 1100 50  0000 C CNN
 F 1 "10k" V 1550 1100 50  0000 C CNN
-F 2 "" V 1480 1100 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 1480 1100 50  0001 C CNN
 F 3 "~" H 1550 1100 50  0001 C CNN
 	1    1550 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C1
 U 1 1 5BB01537
 P 1550 1750
-F 0 "C?" H 1575 1850 50  0000 L CNN
-F 1 "100n" H 1575 1650 50  0000 L CNN
-F 2 "" H 1588 1600 50  0001 C CNN
+F 0 "C1" H 1575 1850 50  0000 L CNN
+F 1 "100n/25V" H 1575 1650 50  0000 L CNN
+F 2 "bytewerk_capacitors:C_0603_1608Metric" H 1588 1600 50  0001 C CNN
 F 3 "~" H 1550 1750 50  0001 C CNN
 	1    1550 1750
 	1    0    0    -1  
@@ -247,23 +247,23 @@ $EndComp
 Wire Wire Line
 	1550 800  1550 950 
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C5
 U 1 1 5BB01FB3
 P 6350 1150
-F 0 "C?" H 6375 1250 50  0000 L CNN
+F 0 "C5" H 6375 1250 50  0000 L CNN
 F 1 "10u/25V" H 6375 1050 50  0000 L CNN
-F 2 "" H 6388 1000 50  0001 C CNN
+F 2 "bytewerk_capacitors:C_0805_2012Metric" H 6388 1000 50  0001 C CNN
 F 3 "~" H 6350 1150 50  0001 C CNN
 	1    6350 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C4
 U 1 1 5BB023D7
 P 5650 1150
-F 0 "C?" H 5675 1250 50  0000 L CNN
+F 0 "C4" H 5675 1250 50  0000 L CNN
 F 1 "100n/25V" H 5675 1050 50  0000 L CNN
-F 2 "" H 5688 1000 50  0001 C CNN
+F 2 "bytewerk_capacitors:C_0603_1608Metric" H 5688 1000 50  0001 C CNN
 F 3 "~" H 5650 1150 50  0001 C CNN
 	1    5650 1150
 	1    0    0    -1  
@@ -320,12 +320,12 @@ F 3 "" H 1100 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J1
 U 1 1 5BB06B45
 P 1550 6950
-F 0 "J?" H 1550 7050 50  0000 C CNN
+F 0 "J1" H 1550 7050 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 1550 6750 50  0000 C CNN
-F 2 "" H 1550 6950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1550 6950 50  0001 C CNN
 F 3 "~" H 1550 6950 50  0001 C CNN
 	1    1550 6950
 	-1   0    0    -1  
@@ -366,23 +366,23 @@ NoConn ~ 2400 3850
 NoConn ~ 2400 3950
 NoConn ~ 2400 4050
 $Comp
-L Connector:Micro_SD_Card_Det J?
+L Connector:Micro_SD_Card_Det J2
 U 1 1 5BB0DA22
 P 9450 5650
-F 0 "J?" H 8800 6350 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 10100 6350 50  0000 R CNN
-F 2 "" H 11500 6350 50  0001 C CNN
+F 0 "J2" H 8800 6350 50  0000 C CNN
+F 1 "DM3AT-SF-PEJM5(40)" H 10100 6350 50  0000 R CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 11500 6350 50  0001 C CNN
 F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 9450 5750 50  0001 C CNN
 	1    9450 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L?
+L Device:L L2
 U 1 1 5BB0E836
 P 10600 6150
-F 0 "L?" V 10550 6150 50  0000 C CNN
+F 0 "L2" V 10550 6150 50  0000 C CNN
 F 1 "L" V 10675 6150 50  0000 C CNN
-F 2 "" H 10600 6150 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 10600 6150 50  0001 C CNN
 F 3 "~" H 10600 6150 50  0001 C CNN
 	1    10600 6150
 	0    1    1    0   
@@ -441,67 +441,67 @@ SD_DAT0
 Text Label 6300 5950 2    50   ~ 0
 SD_DAT1
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R12
 U 1 1 5BB19B45
 P 7900 5250
-F 0 "R?" V 7980 5250 50  0000 C CNN
+F 0 "R12" V 7980 5250 50  0000 C CNN
 F 1 "33R" V 7900 5250 50  0000 C CNN
-F 2 "" V 7830 5250 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7830 5250 50  0001 C CNN
 F 3 "~" H 7900 5250 50  0001 C CNN
 	1    7900 5250
 	0    -1   1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R9
 U 1 1 5BB1AA02
 P 7550 5350
-F 0 "R?" V 7630 5350 50  0000 C CNN
+F 0 "R9" V 7630 5350 50  0000 C CNN
 F 1 "33R" V 7550 5350 50  0000 C CNN
-F 2 "" V 7480 5350 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7480 5350 50  0001 C CNN
 F 3 "~" H 7550 5350 50  0001 C CNN
 	1    7550 5350
 	0    -1   1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R13
 U 1 1 5BB1AA3E
 P 7900 5450
-F 0 "R?" V 7980 5450 50  0000 C CNN
+F 0 "R13" V 7980 5450 50  0000 C CNN
 F 1 "33R" V 7900 5450 50  0000 C CNN
-F 2 "" V 7830 5450 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7830 5450 50  0001 C CNN
 F 3 "~" H 7900 5450 50  0001 C CNN
 	1    7900 5450
 	0    -1   1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R10
 U 1 1 5BB1AAA8
 P 7600 5650
-F 0 "R?" V 7680 5650 50  0000 C CNN
+F 0 "R10" V 7680 5650 50  0000 C CNN
 F 1 "10R" V 7600 5650 50  0000 C CNN
-F 2 "" V 7530 5650 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7530 5650 50  0001 C CNN
 F 3 "~" H 7600 5650 50  0001 C CNN
 	1    7600 5650
 	0    -1   1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R14
 U 1 1 5BB1AAEE
 P 7900 5850
-F 0 "R?" V 7980 5850 50  0000 C CNN
+F 0 "R14" V 7980 5850 50  0000 C CNN
 F 1 "200R" V 7900 5850 50  0000 C CNN
-F 2 "" V 7830 5850 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7830 5850 50  0001 C CNN
 F 3 "~" H 7900 5850 50  0001 C CNN
 	1    7900 5850
 	0    -1   1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R11
 U 1 1 5BB1AB40
 P 7600 5950
-F 0 "R?" V 7680 5950 50  0000 C CNN
+F 0 "R11" V 7680 5950 50  0000 C CNN
 F 1 "33R" V 7600 5950 50  0000 C CNN
-F 2 "" V 7530 5950 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7530 5950 50  0001 C CNN
 F 3 "~" H 7600 5950 50  0001 C CNN
 	1    7600 5950
 	0    -1   1    0   
@@ -545,12 +545,12 @@ Wire Wire Line
 Wire Wire Line
 	6300 6050 8550 6050
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R15
 U 1 1 5BB2F5AE
 P 7900 6150
-F 0 "R?" V 7980 6150 50  0000 C CNN
+F 0 "R15" V 7980 6150 50  0000 C CNN
 F 1 "10k" V 7900 6150 50  0000 C CNN
-F 2 "" V 7830 6150 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7830 6150 50  0001 C CNN
 F 3 "~" H 7900 6150 50  0001 C CNN
 	1    7900 6150
 	0    1    1    0   
@@ -566,23 +566,23 @@ DET_B
 Text Notes 7200 6300 2    50   ~ 0
 using two pins for lower quiescent current
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C3
 U 1 1 5BB35A7C
 P 5200 7100
-F 0 "C?" H 5225 7200 50  0000 L CNN
+F 0 "C3" H 5225 7200 50  0000 L CNN
 F 1 "10u/25V" H 5225 7000 50  0000 L CNN
-F 2 "" H 5238 6950 50  0001 C CNN
+F 2 "bytewerk_capacitors:C_0805_2012Metric" H 5238 6950 50  0001 C CNN
 F 3 "~" H 5200 7100 50  0001 C CNN
 	1    5200 7100
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C2
 U 1 1 5BB35A83
 P 4500 7100
-F 0 "C?" H 4525 7200 50  0000 L CNN
+F 0 "C2" H 4525 7200 50  0000 L CNN
 F 1 "100n/25V" H 4525 7000 50  0000 L CNN
-F 2 "" H 4538 6950 50  0001 C CNN
+F 2 "bytewerk_capacitors:C_0603_1608Metric" H 4538 6950 50  0001 C CNN
 F 3 "~" H 4500 7100 50  0001 C CNN
 	1    4500 7100
 	1    0    0    -1  
@@ -623,12 +623,12 @@ Wire Wire Line
 Wire Wire Line
 	4500 6800 4500 6950
 $Comp
-L Device:L L?
+L Device:L L1
 U 1 1 5BB373D0
 P 4200 6800
-F 0 "L?" V 4150 6800 50  0000 C CNN
+F 0 "L1" V 4150 6800 50  0000 C CNN
 F 1 "L" V 4275 6800 50  0000 C CNN
-F 2 "" H 4200 6800 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 4200 6800 50  0001 C CNN
 F 3 "~" H 4200 6800 50  0001 C CNN
 	1    4200 6800
 	0    1    1    0   
@@ -660,14 +660,14 @@ Wire Wire Line
 Text GLabel 8750 3350 2    50   Input ~ 0
 BAT_ADC_IN
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 5BB5154F
-P 9950 3100
-F 0 "Y?" H 9950 3250 50  0000 C CNN
-F 1 "Crystal" H 9950 2950 50  0000 C CNN
-F 2 "" H 9950 3100 50  0001 C CNN
-F 3 "~" H 9950 3100 50  0001 C CNN
-	1    9950 3100
+P 9700 3100
+F 0 "Y1" V 9700 2950 50  0000 C CNN
+F 1 "LFXTAL009709Bulk" V 9700 3650 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 9700 3100 50  0001 C CNN
+F 3 "~" H 9700 3100 50  0001 C CNN
+	1    9700 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -675,65 +675,65 @@ Wire Wire Line
 Wire Wire Line
 	9400 3050 9400 2850
 Wire Wire Line
-	9400 2850 9950 2850
+	9400 2850 9700 2850
 Wire Wire Line
-	9950 2850 9950 2950
+	9700 2850 9700 2950
 Wire Wire Line
 	8500 3150 9400 3150
 Wire Wire Line
 	9400 3150 9400 3350
 Wire Wire Line
-	9400 3350 9950 3350
+	9400 3350 9700 3350
 Wire Wire Line
-	9950 3350 9950 3250
+	9700 3350 9700 3250
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C6
 U 1 1 5BB55A72
-P 10300 2850
-F 0 "C?" H 10325 2950 50  0000 L CNN
-F 1 "C" H 10325 2750 50  0000 L CNN
-F 2 "" H 10338 2700 50  0001 C CNN
-F 3 "~" H 10300 2850 50  0001 C CNN
-	1    10300 2850
+P 10050 2850
+F 0 "C6" H 10075 2950 50  0000 L CNN
+F 1 "C" H 10075 2750 50  0000 L CNN
+F 2 "bytewerk_capacitors:C_0603_1608Metric" H 10088 2700 50  0001 C CNN
+F 3 "~" H 10050 2850 50  0001 C CNN
+	1    10050 2850
 	0    1    1    0   
 $EndComp
 $Comp
-L bytewerk-discrete:C C?
+L bytewerk-discrete:C C7
 U 1 1 5BB55B35
-P 10300 3350
-F 0 "C?" H 10325 3450 50  0000 L CNN
-F 1 "C" H 10325 3250 50  0000 L CNN
-F 2 "" H 10338 3200 50  0001 C CNN
-F 3 "~" H 10300 3350 50  0001 C CNN
-	1    10300 3350
+P 10050 3350
+F 0 "C7" H 10075 3450 50  0000 L CNN
+F 1 "C" H 10075 3250 50  0000 L CNN
+F 2 "bytewerk_capacitors:C_0603_1608Metric" H 10088 3200 50  0001 C CNN
+F 3 "~" H 10050 3350 50  0001 C CNN
+	1    10050 3350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10150 3350 9950 3350
-Connection ~ 9950 3350
+	9900 3350 9700 3350
+Connection ~ 9700 3350
 Wire Wire Line
-	9950 2850 10150 2850
-Connection ~ 9950 2850
+	9700 2850 9900 2850
+Connection ~ 9700 2850
 $Comp
 L power:GND #PWR0115
 U 1 1 5BB5ECE5
-P 10700 3550
-F 0 "#PWR0115" H 10700 3300 50  0001 C CNN
-F 1 "GND" H 10700 3400 50  0000 C CNN
-F 2 "" H 10700 3550 50  0001 C CNN
-F 3 "" H 10700 3550 50  0001 C CNN
-	1    10700 3550
+P 10650 3550
+F 0 "#PWR0115" H 10650 3300 50  0001 C CNN
+F 1 "GND" H 10650 3400 50  0000 C CNN
+F 2 "" H 10650 3550 50  0001 C CNN
+F 3 "" H 10650 3550 50  0001 C CNN
+	1    10650 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 2850 10700 2850
+	10200 2850 10650 2850
 Wire Wire Line
-	10700 2850 10700 3350
+	10650 2850 10650 3350
 Wire Wire Line
-	10450 3350 10700 3350
-Connection ~ 10700 3350
+	10200 3350 10650 3350
+Connection ~ 10650 3350
 Wire Wire Line
-	10700 3350 10700 3550
+	10650 3350 10650 3550
 Text Label 2100 3250 2    50   ~ 0
 DET_A
 Text Label 2100 3350 2    50   ~ 0
@@ -763,10 +763,10 @@ Hierachical Label
 Text Notes 9200 2300 0    50   ~ 0
 Local Label
 $Comp
-L Device:Q_PMOS_GSD Q?
+L Device:Q_PMOS_GSD Q1
 U 1 1 5BB1888C
 P 3600 6900
-F 0 "Q?" V 3950 6800 50  0000 L CNN
+F 0 "Q1" V 3950 6800 50  0000 L CNN
 F 1 "DMG2305UX-7" V 3850 6800 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 7000 50  0001 C CNN
 F 3 "~" H 3600 6900 50  0001 C CNN
@@ -774,12 +774,12 @@ F 3 "~" H 3600 6900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R4
 U 1 1 5BB1B548
 P 3300 7050
-F 0 "R?" V 3380 7050 50  0000 C CNN
+F 0 "R4" V 3380 7050 50  0000 C CNN
 F 1 "10k" V 3300 7050 50  0000 C CNN
-F 2 "" V 3230 7050 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 3230 7050 50  0001 C CNN
 F 3 "~" H 3300 7050 50  0001 C CNN
 	1    3300 7050
 	-1   0    0    1   
@@ -813,45 +813,45 @@ CAN_EN
 Text HLabel 8750 3250 2    50   Output ~ 0
 CAN_TERM_EN
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R5
 U 1 1 5BB31039
 P 6600 4900
-F 0 "R?" V 6680 4900 50  0000 C CNN
+F 0 "R5" V 6680 4900 50  0000 C CNN
 F 1 "10k" V 6600 4900 50  0000 C CNN
-F 2 "" V 6530 4900 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 6530 4900 50  0001 C CNN
 F 3 "~" H 6600 4900 50  0001 C CNN
 	1    6600 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R6
 U 1 1 5BB31189
 P 6800 4900
-F 0 "R?" V 6880 4900 50  0000 C CNN
+F 0 "R6" V 6880 4900 50  0000 C CNN
 F 1 "10k" V 6800 4900 50  0000 C CNN
-F 2 "" V 6730 4900 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 6730 4900 50  0001 C CNN
 F 3 "~" H 6800 4900 50  0001 C CNN
 	1    6800 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R7
 U 1 1 5BB31249
 P 7000 4900
-F 0 "R?" V 7080 4900 50  0000 C CNN
+F 0 "R7" V 7080 4900 50  0000 C CNN
 F 1 "10k" V 7000 4900 50  0000 C CNN
-F 2 "" V 6930 4900 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 6930 4900 50  0001 C CNN
 F 3 "~" H 7000 4900 50  0001 C CNN
 	1    7000 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L bytewerk-discrete:R R?
+L bytewerk-discrete:R R8
 U 1 1 5BB312A3
 P 7200 4900
-F 0 "R?" V 7280 4900 50  0000 C CNN
+F 0 "R8" V 7280 4900 50  0000 C CNN
 F 1 "10k" V 7200 4900 50  0000 C CNN
-F 2 "" V 7130 4900 50  0001 C CNN
+F 2 "bytewerk_resistors:R_0603_1608Metric" V 7130 4900 50  0001 C CNN
 F 3 "~" H 7200 4900 50  0001 C CNN
 	1    7200 4900
 	1    0    0    -1  
@@ -878,17 +878,6 @@ Wire Wire Line
 Connection ~ 7200 5950
 Wire Wire Line
 	7200 5950 7450 5950
-$Comp
-L power:+3V3 #PWR0116
-U 1 1 5BB46C9E
-P 6600 4550
-F 0 "#PWR0116" H 6600 4400 50  0001 C CNN
-F 1 "+3V3" H 6600 4690 50  0000 C CNN
-F 2 "" H 6600 4550 50  0001 C CNN
-F 3 "" H 6600 4550 50  0001 C CNN
-	1    6600 4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 4550 6600 4650
 Wire Wire Line
@@ -921,10 +910,10 @@ ESP_EN
 Text HLabel 1100 6100 0    50   Input ~ 0
 IO0
 $Comp
-L Diode:BAT54C D?
+L Diode:BAT54C D3
 U 1 1 5BBE1344
 P 1500 6450
-F 0 "D?" H 1525 6300 50  0000 L CNN
+F 0 "D3" H 1525 6300 50  0000 L CNN
 F 1 "BAT54C" H 1250 6575 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 1575 6575 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 1420 6450 50  0001 C CNN
@@ -946,4 +935,19 @@ Wire Wire Line
 Connection ~ 1100 6450
 Wire Wire Line
 	1350 1450 1550 1450
+Text Label 6600 4550 0    50   ~ 0
+SD_VDD
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5BB84F46
+P 4500 6700
+F 0 "#FLG0101" H 4500 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 4500 6850 50  0000 C CNN
+F 2 "" H 4500 6700 50  0001 C CNN
+F 3 "~" H 4500 6700 50  0001 C CNN
+	1    4500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6700 4500 6800
 $EndSCHEMATC
